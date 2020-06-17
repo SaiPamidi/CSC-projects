@@ -8,7 +8,6 @@ function setup()
 	y_box = 20;
 	count =0;
 	score_count = 0;
-	//life = 3;
 	life_r = 30;
 } 
 
@@ -16,7 +15,6 @@ function draw()
 {
 background(255);
 racecar(x_racecar,y_racecar); // draw racecar
-//box(x_box,y_box);
 fill(0)
 rect(x_box,y_box,30,30); // draw box
 y_box += 8;
@@ -35,15 +33,7 @@ scoreboard()
 car_crash();
 wall_crash();
 fill(0);
-//if(lives=0)
-//{
-//	fill(0);
- //  textSize(30);
-  // textFont("helevetica");
-  // text("gameover",0,width/2);
-   
 
-//}
 ellipse(70,70,life_r);
 if(life_r <= 0)
 {
@@ -55,11 +45,6 @@ if(life_r <= 0)
 	life_r = 30;
 }
 
-/*if(count>0)
-{
-	fill(random(255),random(255),random(255))
-	ellipse(50,50,20)
-}*/
 
 }
 function racecar(xcar,ycar)
@@ -86,13 +71,7 @@ function racecar(xcar,ycar)
 		ellipse(31,55,20)
 	pop();
 }
-//function box(xbox,ybox)
-//{	
-	//fill(0);
-	//rect(xbox,ybox,50);
-	//xbox += -50;
 
-//}
 function keyPressed()
 {
 	if(keyCode === LEFT_ARROW)
@@ -118,16 +97,8 @@ function car_crash()
                 
 			fill(0)
 			count ++;
-			//lives--;
-			
 			life_r -= 2;
 
-
-
-			
-			//textSize(50);
-   			//textFont("helevetica");
-   			//text("YOU CRASHED",10,50);
 		}
 	}
 }
@@ -155,6 +126,5 @@ function scoreboard()
    textSize(30);
    textFont("helevetica");
    text("life:",0,80);
-   //text(life,80,60)
 }
 
