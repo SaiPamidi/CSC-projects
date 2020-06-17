@@ -1,4 +1,4 @@
-### Links of projects
+### Links to projects
 + data analysis on youtube videos and Neural network application [here](https://colab.research.google.com/drive/1oME4bnok1VJtHnKUwnPCWazz-4MbOPXR?usp=sharing)
 
 + Classification ML algorithms [here](https://colab.research.google.com/drive/1hSRSnpml--ScaCFBFFWZsi5Q3aPrzT0_?usp=sharing)
